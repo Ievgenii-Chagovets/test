@@ -4,28 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/test.css">
 </head>
 <body>
     <main>
-        <!-- <div class="box">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure laboriosam dicta numquam voluptates blanditiis pariatur est, delectus repudiandae error illum facere mollitia recusandae tempora earum commodi autem consectetur maxime quibusdam.
-        </div>
-        <div class="box-1">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, soluta, inventore deserunt ut totam porro voluptas in animi sint optio voluptatem cupiditate, odio consequatur provident. Itaque nemo quos odio et.
-        </div> -->
-        <ul class="link-list">
-            <li class="link-1 link">
-                <a href="">Returne to back</a>
-            </li>
-            <li class="link-2 link">
-            <a href="">Press on me</a>
-            </li>
-            <li class="link-3 link">
-                <a href="">Don't press here</a>
-            </li>
-        </ul>
+        <form class="form js-speaker-form" action="">
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input 
+                    type="text" 
+                    name="name" 
+                    id="name"
+                    placeholder="Ivan Ivanovich" 
+                    autofocus>
+            </div>
+
+            <div class="form-field">
+                <label for="tel">Telephone</label>
+                <input 
+                    type="tel" 
+                    name="tel" 
+                    id="tel"
+                    placeholder="+380**000-00-00">
+            </div>
+
+            <div class="form-field">
+                <label for="email">E-mail</label>
+                <input 
+                    type="email" 
+                    name="E-mail" 
+                    id="email"
+                    placeholder="my@mail.com">
+            </div>
+
+
+            <div role="group" class="group">
+                <h2 class="group-title">Тема доклада</h2>
+
+                <ul class="topic-options">
+                    <li class="topic-options-item">
+                        <input type="checkbox" name="topic" value="html" id="html">
+                        <label for="html">HTML</label>
+                    </li>
+                    <li class="topic-options-item">
+                        <input type="checkbox" name="topic" value="css" id="css">
+                        <label for="css">CSS</label>
+                    </li>
+                    <li class="topic-options-item">
+                        <input type="checkbox" name="topic" value="js" id="js">
+                        <label for="js">JavaScript</label>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div role="group" class="group">
+                <h2 class="group-title">Уровень знаний</h2>
+                <ul class="experience-options list">
+                    <li>
+                        <input type="radio" name="experience" value="middle" id="middle">
+                        <label for="middle">Middle</label>
+                    </li>
+                        
+                    <li>
+                        <input type="radio" name="experience" value="junior" id="junior">
+                        <label for="junior">Junior</label>
+                    </li>
+                    
+                    <li>
+                        <input type="radio" name="experience" value="senior" id="senior">
+                        <label for="senior">Senior</label>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="form-field">
+                <label for="pdf">Dowload file in pdf</label>
+                <input type="file" name="pdf" id="pdf">
+            </div>
+            
+            <div class="form-field">
+                <label for="comment">Live your comment</label>
+                <textarea name="" id="" cols="30" rows="10" id="comment"></textarea>
+            </div>
+            
+            <div class="form-field">
+                <input type="checkbox" name="" id="policy">
+                <label for="policy">agree with everything for food</label>
+            </div>
+            
+            <button type="submit">Order</button>
+        </form>
     </main>
+    
 </body>
 </html>
